@@ -18,7 +18,7 @@
   <body>
     <!-- !-----navigation Bar----  -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav #="nav-bar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <button
         class="navbar-toggler"
@@ -39,13 +39,13 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
+            <a class="nav-link" href="#about-title"">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
+            <a class="nav-link" href="#portfolio">Projects</a>
+          </li> 
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Me</a>
+            <a class="nav-link" href="#contact">Contact Me</a>
           </li>
           <!-- <li class="nav-item">
             <a
@@ -73,51 +73,31 @@
     </div>
     <!-- Background -->
 
-    <!-- <div class="bg-image overlay-dark40 dark-bg parallax parallax-background2" data-background-img="img/background7.jpeg" style="background-image: url(&quot;img/background7.jpeg&quot;); background-position: left 0px;">
-        <div class="js-fullscreen-height container" style="height: 1024px;">
-            <div class="intro-content">
-                <div class="intro-content-inner text-center">
+    
 
-                    <h1 class="title mb-50 text-light"><span class="nameColor">Joylynn Foli</span></h1>
-                    <h4 class="subtitle">joyfoli (joy·fully) designed</h4>
-                    <h5 class="alt-title">Junior JavaScript Developer</h5>
-
-                  <br> -->
-
-    <div class="about" class="mt-3 mb-5">
+    <div id="about" class="mt-3 mb-5">
       <div class="post-heading text-center">
-        <h3 class="display-4 font-weight bold">About Me</h3>
+        <h3 id="about-title" class="display-4 font-weight bold">About Me</h3>
         <hr class="w-50 mx-auto pb-5">
       </div>
 
       <div class="wrapper">
-        <div class="container">
+        <!-- <div class="container"> -->
         <!-- <h1 style="text-align: center;">Joylynn</h1> -->
-        <p>
-          "What lies behind you and what lies in front of you, pales in comparison to what lies inside of you". Ralph Waldo Emerson</p>
-        <p>You can't have light without dark. You can't know happiness unless you've known sorrow. A little happy sunlight shining through there. The more we do this - the more it will do good things to our heart. We'll put a happy little sky in here. Just think about these things in your mind and drop em' on canvas. Now then, let's play. Everything's not great in life, but we can still find beauty in it. Let that brush dance around there and play. I sincerely wish for you every possible joy life could bring. Think about a cloud. Just float around and be there.</p>
-        </div>
-        <img src="./Assets/MeFlipped.png"<source>
+        <p id="about-para">
+          "What lies behind you and what lies in front of you, pales in comparison to what lies inside of you". Ralph Waldo Emerson <br> <br>
+        In some ways I feel I have lived a few lifetimes in terms of my path and where I am now.  Much of my life was spent growing up and living in California where I managed an interior design firm in San Diego and ultimately owned and operated my own Window Treatment/Interior Design company.  After moving to Indiana my life took a different turn which equated to sales and distribution of wine and spirits.  Eventually one of my real passions was called upon which was helping people in recovery through coaching and a therapeutic modality called Internal Family Systems.  In the background of this journey, I was always dabbling in graphic design in a multitude of ways.  <br>
+          <br>
+          At this point I am attempting to honor the marriage of my interests.  I am committed to furthering JoyFoli Designed ® and my web development career with 1150 Academy, along with growing my Coaching and Internal Family Systems practice, JoyFoli Integrated ®.  Interestingly they both have some commonality regarding creating systems that work together to create more balance or desired outcomes.   The joy that comes from creating things and supporting people in their journey is accessed through both ventures.  
+          </p>
+        <!-- </div> -->
+        <img id="portfolio-pic" src="./Assets/MeFlipped.png"<source>
       </div>
-      <!-- <div class="row"><div class="col-lg-6 col-md-6 col-12">
-        <img src="./Assets/MeFlipped.png" class=img-fluid>
-        <p>You can't have light without dark. You can't know happiness unless you've known sorrow. A little happy sunlight shining through there. The more we do this - the more it will do good things to our heart. We'll put a happy little sky in here. Just think about these things in your mind and drop em' on canvas. Now then, let's play. Everything's not great in life, but we can still find beauty in it. Let that brush dance around there and play. I sincerely wish for you every possible joy life could bring. Think about a cloud. Just float around and be there.
-
-        </p>
-      </div> -->
+    
         </div>
-    </div>
+    
 
-                  <!-- <div>
-                    <h1 class="bio" style="text-align: center;">About Me</h1>
-                  <div class="wrapper">
-                    <div class="container">
-                    <h3 style="text-align: center;">Joylynn (joy·lin)</h3>
-                    <p>You can't have light without dark. You can't know happiness unless you've known sorrow. A little happy sunlight shining through there. The more we do this - the more it will do good things to our heart. We'll put a happy little sky in here. Just think about these things in your mind and drop em' on canvas. Now then, let's play. Everything's not great in life, but we can still find beauty in it. Let that brush dance around there and play. I sincerely wish for you every possible joy life could bring. Think about a cloud. Just float around and be there.</p>
-                    </div>
-                    <img src="./Assets/MeFlipped.png"<source>
-                  </div>
-                </div> -->
+                 
 
 
                 </div>
@@ -128,14 +108,14 @@
     <!-- Portfolio -->
     <div id="portfolio" class="container mt-3 mb-5">
       <div class="post-heading text-center">
-        <h3 class="display-4 font-weight-bold">Portfolio</h3>
+        <h3 id="portfolio-h3" class="display-4">Portfolio</h3>
         <hr class='w-50 mx-auto pb-5'>
       </div>
 
       <div class="row">
        <div class="col-lg-4 col-md-6 col-12 pb-5">
         <div class="card" style="width: 18rem;">
-          <img src="./Assets/weird_dog.png" class="card-img-top" alt="...">
+          <img src="./Assets/weird_dog.png" id="card-top" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Creature Project</h5>
             <p class="card-text">This is my first project utilizing html and css.</p>
@@ -154,17 +134,17 @@
         </div>
       </div><div class="col-lg-4 col-md-6 col-12 pb-5">
         <div class="card" style="width: 18rem;">
-          <img src="./Assets/pokemon.png" class="card-img-top" alt="...">
+          <img src="./Assets/Lorem_picsum.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">API Project</h5>
-            <p class="card-text">This is my first API utilizing html, css and JavaScript.</p>
+            <p class="card-text">This is my first API project utilizing html, css and JavaScript.</p>
             <a href="#" class="btn btn-primary">Live Preview</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-12 pb-5">
           <div class="card" style="width: 18rem;">
-            <img src="./Assets/0005720_coming-soon-page_550.jpeg" class="card-img-top" alt="...">
+            <img src="./Assets/coming-soon.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Coming Soon</h5>
               <p class="card-text"></p>
@@ -173,7 +153,7 @@
           </div>
         </div><div class="col-lg-4 col-md-6 col-12 pb-5">
           <div class="card" style="width: 18rem;">
-            <img src="./Assets/0005720_coming-soon-page_550.jpeg" class="card-img-top" alt="...">
+            <img src="./Assets/coming-soon.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Coming Soon</h5>
               <p class="card-text"></p>
@@ -182,7 +162,7 @@
           </div>
         </div><div class="col-lg-4 col-md-6 col-12 pb-5">
           <div class="card" style="width: 18rem;">
-            <img src="./Assets/0005720_coming-soon-page_550.jpeg" class="card-img-top" alt="...">
+            <img src="./Assets/coming-soon.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Coming Soon</h5>
               <p class="card-text"></p>
@@ -209,43 +189,37 @@
         <!-- your other form fields go here -->
             <button type="submit" class="btn btn-outline-dark btn-md text-uppercase">Send</button>
         </form>
-          </form>
+          </div>
       <!-- External Links -->
       <!-- <div class="wrapper"> -->
         
         
        <!-- Footer -->
-<footer class="bg-light text-center text-lg-start">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!--Grid row-->
-    <div class="row">
-      <!--Grid column-->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Footer Content</h5>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-          voluptatem veniam, est atque cumque eum delectus sint!
+       <!-- <div class="jumbotron">
+        <h1 class="display-8">Joylynn Foli</h1>
+        <p class="lead">
+          joyfoli (joy·fully) designed
         </p>
-      </div>
+        <hr class="my-4" />
+        <p>
+          Junior JavaScript Developer
+        </p>
+        <a class="btn btn-primary btn-lg" href="./Assets/JoylynnFoli_121720_Resume.pdf" role="button">Download Resume</a>
+      </div> -->
+<footer id="footer-section" class="bg-light text-center text-lg-start ">
+  
       <!--Grid column-->
-
-      
-
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0" class="external_links">
+      <div class="col-lg mb-4 mb-md-0" class="external_links">
         <h5 class="text-uppercase mb-0">Let's Connect</h5>
 
         <ul class="list-unstyled">
           <li>
             <a href="#!" class="text-dark"></a>
             <div class="external_links">
-              <a href="https://www.facebook.com/joylynnfoli" id="facebook" target="_blank"><i class="fab fa-facebook fa-2x" style="color: rgb(53, 216, 238)" ></i></a>
-              <a href="https://www.instagram.com/joylynnfoli/" id="instagram" target="_blank"><i class="fab fa-instagram fa-2x" style="color: rgb(53, 216, 238)"></i></a>
-              <a href="https://twitter.com/JoylynnFoli" id="twitter" target="_blank"><i class="fab fa-twitter fa-2x" style="color: rgb(53, 216, 238)"></i></a>
-              <a href="https://www.linkedin.com/in/joylynn-foli/" id="linked_in" target="_blank"><i class="fab fa-linkedin-in fa-2x" style="color: rgb(53, 216, 238)"></i></a>
+              <a href="https://www.facebook.com/joylynnfoli" id="external-link" id="facebook" target="_blank"><i class="fab fa-facebook fa-2x" style="color: rgb(53, 216, 238)" ></i></a>
+              <a href="https://www.instagram.com/joylynnfoli/" id="external-link" id="instagram" target="_blank"><i class="fab fa-instagram fa-2x" style="color: rgb(53, 216, 238)"></i></a>
+              <a href="https://twitter.com/JoylynnFoli" id="external-link" id="twitter" target="_blank"><i class="fab fa-twitter fa-2x" style="color: rgb(53, 216, 238)"></i></a>
+              <a href="https://www.linkedin.com/in/joylynn-foli/" id="external-link" id="linked_in" target="_blank"><i class="fab fa-linkedin-in fa-2x" style="color: rgb(53, 216, 238)"></i></a>
               
               
                  
@@ -281,19 +255,19 @@
       <!-- your other form fields go here -->
 
 
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"
+      ></script>
+    
+      <!-- font awesome -->
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js "></script>
+    <!-- <iframe src=></iframe> -->
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-    crossorigin="anonymous"
-  ></script>
-
-  <!-- font awesome -->
-<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js "></script>
-<!-- <iframe src=></iframe> -->
 </html>
