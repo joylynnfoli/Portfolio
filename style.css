@@ -4,7 +4,6 @@ body{
     background-color: #fdfbfb;
     background-color: #fcfcfc;
 background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .nameColor{
@@ -25,58 +24,43 @@ padding:0px
     margin-top: 3%;
     background-color: rgb(180, 178, 176);
     opacity: 75%;
-    /* color: rgb(61, 38, 38); */
-}
-
-#about{
-    /* background-image: "./"; */
-    color: rgb(151, 227, 229);
-    font-size: 100px;
-    margin-top: 300px;
-    margin-bottom: 20px;
-    font-size: 20rem;
 }
 
 #about-title{
+    color: rgb(151, 227, 229);
+    font-size: 100px;
+    margin-top: 20px;
     font-size: 60px;
     font-weight: 350;
 }
 
 #portfolio-h3{
     font-size: 60px;
-    font-weight: 350;
-    /* font-weight: 350; */
-    color: rgb(151, 227, 229);
-    /* font-weight: lighter; */
-    /* font-size: 10px; */
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-}
-
-p {
-   font-size: large; 
-   color: rgb(78, 78, 78);
-}
-
-h3{
-    /* font-size: 10rem; */
+    font-weight: 375;
     color: rgb(151, 227, 229);
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 #portfolio-pic{
-    /* width: 10%; */
     height: 30rem;
-    /* aspect-ratio: ; */
-    /* height: 10%; */
     margin-right: 3rem;
     display: flex;
-    /* flex-direction: ; */
-    /* grid-row: auto; */
     border-radius: 80px;
     padding: 1rem;
-    /* background-image: url(./Assets/basketball.png); */
 }
 
+p {
+   font-size: x-large; 
+   color: rgb(78, 78, 78);
+}
+
+.card-title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}    
+
+.card-text{
+    font-size: large !important;
+}
 .wrapper{
     margin-top: 10px;
     margin-left: 3rem;
@@ -84,16 +68,14 @@ h3{
     display: flex; 
     grid-row: auto; 
     margin-bottom: 60px;
-    /* border-radius: 20px; */
-    /* justify-content: right; */
- } 
-
+} 
 
  .card{
      margin-left: 0px;
      border-radius: 10%;
      height: 400px;
      background-color: rgb(219, 217, 214);
+     border: none;
  }
  
  .card-img-top{
@@ -101,90 +83,18 @@ h3{
     border-top-right-radius: 10%;
     height: 184px;
  }
- 
- 
-
- /* #about{
-     
-     
- } */
-
-/* row{
-    width: 100%;
-}   */
-
-/* .bio{
-    margin-top: 50%;
-    margin-bottom: none;
-    padding: none;
-    justify-content: last baseline;
-} */
-
-/* /* img{
-    border-radius: 20%; */
-    /* size: 120%;
-    width: 25%;
-    padding-left: 20px;
-    margin-right: 25%; */
-    /* aspect-ratio: auto; */
-    
-
-
-/* .nav{
-    color: rgb(15, 134, 95);
-    position: fixed;
-} */
-
-
-#nav-bar { 
-    position: static;
-    background: rgba (0,0,0,0.6);
-    top: 0;
-    width: 100%;
-    
-}
 
 #navbarNav{
-    /*font-family: 'Amatic SC', cursive;
-/* font-family: 'Caveat', cursive; */
-/* font-family: 'EB Garamond', serif; */
-font-family: 'Special Elite', cursive;
-font-size: 20px;
-/* background: rgb(129, 131, 131); */
-border-color: rgb(173, 183, 185);
-border: none;
-letter-spacing: .2rem;
-/* text-decoration-color: steelblue; */
-/* text-transform: uppercase; */
-/* display: flex;
-position: relative; */
-    /* text-align: center; */
-    /* margin-left: 38%; */
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    border-color: rgb(173, 183, 185);
+    border: none;
+    letter-spacing: .2rem;
     justify-content: center;
-    /* align-items: right; */
 }
-
-.nav-link{
-    text-align: center;
-    color: slateblue;
-    /* text-decoration-color: royalblue; */
-    /* margin-left: 20% */
-}
-
-.nav-item{
-    text-decoration-color: turquoise;
-/* margin-top: 50px; */
-/* text-decoration-color: seagreen; */
-}
-
-/* .intro-content-inner{
-} */
 
 .subtitle .phonetic{
-    /* color: teal; */
-    /* display: flex; grid-row: ; */
     justify-content: space-around;
-   
 }
 
 .my-4{
@@ -196,21 +106,13 @@ position: relative; */
     color: rgb(104, 104, 110);
 }
 
-.h3{
-    font-size: 5rem;;
-}
-
 #contact{
-    /* margin-right: 0; */
-    /* padding: 15px 30px; */
     background: linear-gradient(to right, #aedaa7, #56d3ba);
     border-radius: 25px;
     border: none;
     color: #fff;
-    /* min-width: 60%; */
     padding: 3rem;
     opacity: 40%;
-
 }
 
 #external-link{
@@ -219,22 +121,16 @@ position: relative; */
     margin-top: 10px;
 }
 
-
 #footer-section{
     padding-top: 20px;
-    width: 100vw !important;
-    /* max-width: 900px; */
     display: block;
-    /* margin: 0px; */
-    /* margin-left: -20%; */
     margin-top: 50px;
     box-sizing: unset;
 }
 
 #about-para {
-    /* margin-right: 10%; */
-    margin-top: 5%;
-    /* margin-left: -25%; */
+    margin-top: 3%;
+    font-size: large;
 }
 
 
